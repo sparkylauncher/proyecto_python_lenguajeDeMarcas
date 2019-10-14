@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="biblioteca">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="artista"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="artista">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element ref="album"/>
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="album">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="caratula"/>
+        <xs:element ref="fecha_publicacion"/>
+        <xs:sequence maxOccurs="unbounded">
+          <xs:element ref="cancion"/>
+        </xs:sequence>
+      </xs:sequence>
+      <xs:attribute name="titulo" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="caratula">
+    <xs:complexType>
+      <xs:attribute name="ruta_imagen" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="fecha_publicacion" type="xs:string"/>
+
+  <xs:element name="cancion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titulo_cancion"/>
+        <xs:element ref="duracion"/>
+        <xs:element ref="genero"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="titulo_cancion" type="xs:string"/>
+
+  <xs:element name="duracion" type="xs:string"/>
+
+  <xs:element name="genero" type="xs:string"/>
+
+</xs:schema>

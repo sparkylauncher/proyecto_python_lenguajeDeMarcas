@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<base_datos ver="0.1">
+    <paises>
+        <pais id="p1">
+            <nombre>España</nombre>
+            <habitantes>46423034</habitantes>
+            <extension unidad="km2">504645</extension>
+            <gobierno tipo="monarquia" fecha="1978"/>
+            <idiomas>
+                <idioma nombre="castellano"/>
+                <idioma nombre="catalan"/>
+                <idioma nombre="euskera"/>
+                <idioma nombre="gallego"/>
+            </idiomas>
+            <estructura>
+                <region nombre="Andalucia">
+                    <provincia>Málaga</provincia>
+                    <provincia>Sevilla</provincia>
+                    <provincia>Córdoba</provincia>
+                    <provincia>Granada</provincia>
+                    <provincia>Almería</provincia>
+                    <provincia>Jaen</provincia>
+                    <provincia>Cádiz</provincia>
+                    <provincia>Huelva</provincia>
+                </region>
+                <region nombre="Aragón">
+                    <provincia>Zaragoza</provincia>
+                    <provincia>Huesca</provincia>
+                    <provincia>Teruel</provincia>
+                </region>
+                <region nombre="Madrid">
+                    <provincia capital="si">Madrid</provincia>
+                </region>
+                <region nombre="Canarias" ultramar="si">
+                    <provincia>Gran Canaria</provincia>
+                    <provincia>Santa Cruz de Tenerife</provincia>
+                </region>
+            </estructura>
+            <membresia org="NATO OECD"/>
+        </pais>
+        <pais id="p2">
+            <nombre>Irán</nombre>
+            <habitantes>79853900</habitantes>
+            <extension unidad="km2">1648195</extension>
+            <gobierno tipo="republica_islamica" fecha="1979"/>
+            <idiomas>
+                <idioma nombre="persa"/>
+            </idiomas>
+            <estructura>
+                <provincia>Semnan</provincia>
+                <provincia capital="si">Teheran</provincia>
+                <provincia>Kerman</provincia>
+                <provincia>Azerbayan Oriental</provincia>
+                <provincia>Azerbayan Occidental</provincia>
+                <provincia>Kurdistan</provincia>
+            </estructura>
+            <membresia org="OPEC"/>
+        </pais>
+        <pais id="p3">
+            <nombre>Alemania</nombre>
+            <habitantes>81292400</habitantes>
+            <extension unidad="km2">357168</extension>
+            <gobierno tipo="republica_federal" fecha="1990"/>
+            <idiomas>
+                <idioma nombre="aleman"/>
+            </idiomas>
+            <estructura>
+                <estado>
+                    <nombre>Baden-Wutemberg</nombre>
+                    <capital>Sttutgart</capital>
+                </estado>
+                <estado>
+                    <nombre>Baviera</nombre>
+                    <capital>Munich</capital>
+                </estado>
+                <estado>
+                    <nombre>Berlin</nombre>
+                    <capital capital="si">Berlin</capital>
+                </estado>
+                <estado>
+                    <nombre>Renania del Norte-Westfalia</nombre>
+                    <capital>Düsseldorf</capital>
+                </estado>
+                <estado>
+                    <nombre>Baja Sajonia</nombre>
+                    <capital>Hannover</capital>
+                </estado>
+                <estado>
+                    <nombre>Sajonia</nombre>
+                    <capital>Dresde</capital>
+                </estado>
+            </estructura>
+            <membresia org="OECD NATO"/>
+        </pais>
+        <pais id="p4">
+            <nombre>Estados Unidos de América</nombre>
+            <habitantes>316017000</habitantes>
+            <extension unidad="km2">9371174</extension>
+            <gobierno tipo="republica_federal"/>
+            <idiomas>
+                <idioma nombre="ingles"/>
+            </idiomas>
+            <estructura>
+                <estado>
+                    <nombre>Florida</nombre>
+                    <capital>Tallahassee</capital>
+                </estado>                
+                <estado>
+                    <nombre>Columbia</nombre>
+                    <capital capital="si">Washington DC</capital>
+                </estado>                
+                <estado>
+                    <nombre>Colorado</nombre>
+                    <capital>Denver</capital>
+                </estado>
+                <estado>
+                    <nombre>Arizona</nombre>
+                    <capital>Phoenix</capital>
+                </estado>
+                <estado>
+                    <nombre>Massachussetts</nombre>
+                    <capital>Boston</capital>
+                </estado>
+                <estado ultramar="si">
+                    <nombre>Hawai</nombre>
+                    <capital>Honolulu</capital>
+                </estado>
+                <estado>
+                    <nombre>Texas</nombre>
+                    <capital>Austin</capital>
+                </estado>
+                <estado>
+                    <nombre>New Mexico</nombre>
+                    <capital>Santa Fe</capital>
+                </estado>
+            </estructura>
+            <membresia org="NATO OECD"/>
+        </pais>
+    </paises>
+    <organizaciones>
+        <organizacion siglas="NATO" tipo="alianza_militar" fundacion="1949">
+            <nombre>North Atlantic Treaty Organization</nombre>
+            <sede>Bruselas</sede>
+        </organizacion>
+        <organizacion siglas="OECD" tipo="organismo_regional" fundacion="1960">
+            <nombre>Organization for Economic Cooperation and Development</nombre>
+            <sede desde="1967">Paris</sede>
+        </organizacion>
+        <organizacion siglas="OPEC" tipo="cartel" fundacion="1960">
+            <nombre>Organization of the Petroleum Exporting Countries</nombre>
+            <sede desde="1965">Viena</sede>
+        </organizacion>           
+    </organizaciones>
+</base_datos>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="base_datos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="paises"/>
+        <xs:element ref="organizaciones"/>
+      </xs:sequence>
+      <xs:attribute ref="ver" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:attribute name="ver">
+    <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+        <xs:fractionDigits value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  
+  <xs:element name="paises">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pais" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="pais">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="habitantes" type="xs:positiveInteger" minOccurs="0"/>
+        <xs:element ref="extension"/>
+        <xs:element ref="gobierno"/>
+        <xs:element ref="idiomas" minOccurs="0"/>
+        <xs:element ref="estructura" minOccurs="0"/>
+        <xs:element ref="membresia" minOccurs="0"/>
+      </xs:all>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="extension">
+    <xs:complexType mixed="true">
+      <xs:attribute name="unidad" type="xs:string" fixed="km2"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="gobierno">
+    <xs:complexType>
+      <xs:attribute name="fecha" type="xs:string"/>
+      <xs:attribute ref="tipo" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:attribute name="tipo">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="republica_federal"/>
+        <xs:enumeration value="republica_islamica"/>
+        <xs:enumeration value="monarquia"/>
+        <xs:enumeration value="dictadura"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+ 
+  <xs:element name="idiomas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="idioma" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="idioma">
+    <xs:complexType>
+      <xs:attribute name="nombre" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+ 
+  <xs:element name="estructura">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="estado" maxOccurs="unbounded"/>
+        <xs:element ref="region" maxOccurs="unbounded"/>
+        <xs:element ref="provincia" maxOccurs="unbounded"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="region">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="provincia" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required"/>
+      <xs:attribute name="ultramar" type="ultramarType" default="no"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:simpleType name="ultramarType">
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="si"/>
+            <xs:enumeration value="no"/>
+          </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:element name="provincia">
+    <xs:complexType mixed="true">
+      <xs:attribute name="capital" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="membresia">
+    <xs:complexType>
+      <xs:attribute name="org" type="xs:IDREFS" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="estado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element ref="capital"/>
+      </xs:sequence>
+      <xs:attribute name="ultramar" type="ultramarType" default="no"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="capital">
+    <xs:complexType mixed="true">
+      <xs:attribute name="capital" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="organizaciones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="organizacion" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  
+  </xs:element>
+  <xs:element name="organizacion">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element ref="sede"/>
+      </xs:all>
+      <xs:attribute name="fundacion" type="xs:string"/>
+      <xs:attribute name="siglas" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:ID">
+            <xs:pattern value="[A-Z]*"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="tipo" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="cartel"/>
+            <xs:enumeration value="organismo_regional"/>
+            <xs:enumeration value="alianza_militar"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="sede">
+    <xs:complexType mixed="true">
+      <xs:attribute name="desde" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

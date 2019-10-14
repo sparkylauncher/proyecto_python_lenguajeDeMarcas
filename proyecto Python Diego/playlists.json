@@ -1,0 +1,69 @@
+{
+    "playlists": {
+        "playlist": [
+            {
+                "@id": "pl01",
+                "@nombre": "Mujeres favoritas",
+                "@modo": "ordenado",
+                "cancion": [
+                    {
+                        "@id": "alb01c01",
+                        "@orden": "1"
+                    },
+                    {
+                        "@id": "alb02c01",
+                        "@orden": "2"
+                    },
+                    {
+                        "@id": "alb03c01",
+                        "@orden": "3"
+                    }
+                ]
+            },
+            {
+                "@id": "pl02",
+                "@nombre": "Mujeres random",
+                "@modo": "aleatorio",
+                "cancion": [
+                    {
+                        "@id": "alb01c01"
+                    },
+                    {
+                        "@id": "alb01c02"
+                    },
+                    {
+                        "@id": "alb01c03"
+                    },
+                    {
+                        "@id": "alb02c01"
+                    },
+                    {
+                        "@id": "alb02c02"
+                    },
+                    {
+                        "@id": "alb03c01"
+                    },
+                    {
+                        "@id": "alb03c02"
+                    }
+                ]
+            },
+            {
+                "@id": "pl03",
+                "@nombre": "Mujeres álbumes",
+                "@modo": "álbum",
+                "album": [
+                    {
+                        "@id": "alb01"
+                    },
+                    {
+                        "@id": "alb02"
+                    },
+                    {
+                        "@id": "alb03"
+                    }
+                ]
+            }
+        ]
+    }
+}

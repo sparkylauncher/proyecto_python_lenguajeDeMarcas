@@ -1,0 +1,279 @@
+{
+    "biblioteca": {
+        "albumes": {
+            "album": [
+                {
+                    "@id": "alb01",
+                    "@año": "2018",
+                    "@artista": "art01",
+                    "@cubierta": "cub_01",
+                    "titulo": "El mal querer",
+                    "compañia": {
+                        "@nombre": "Sony Music"
+                    },
+                    "cancion": [
+                        {
+                            "@id": "alb01c01",
+                            "@duracion": "2:29",
+                            "@valoracion": "5",
+                            "titulo": "Malamente",
+                            "reproducciones": {
+                                "@última": "15-02-2019",
+                                "@numero": "4"
+                            },
+                            "género": [
+                                "Flamenco",
+                                "Pop español",
+                                "Urbano"
+                            ]
+                        },
+                        {
+                            "@id": "alb01c02",
+                            "@duracion": "4:29",
+                            "@valoracion": "3",
+                            "titulo": "Que no salga la luna",
+                            "reproducciones": {
+                                "@última": "30-12-2018",
+                                "@numero": "1"
+                            }
+                        },
+                        {
+                            "@id": "alb01c03",
+                            "@duracion": "3:13",
+                            "@valoracion": "5",
+                            "titulo": "Pienso en tu mirá",
+                            "reproducciones": {
+                                "@última": "15-02-2019",
+                                "@numero": "10"
+                            }
+                        },
+                        {
+                            "@id": "alb01c04",
+                            "@duracion": "2:24",
+                            "titulo": "De aquí no sales"
+                        },
+                        {
+                            "@id": "alb01c05",
+                            "@duracion": "3:28",
+                            "titulo": "reniego"
+                        },
+                        {
+                            "@id": "alb01c06",
+                            "@duracion": "0:40",
+                            "titulo": "Preso"
+                        },
+                        {
+                            "@id": "alb01c07",
+                            "@duracion": "3:02",
+                            "titulo": "Bagdad"
+                        },
+                        {
+                            "@id": "alb01c08",
+                            "@duracion": "2:42",
+                            "titulo": "Dí mi nombre"
+                        },
+                        {
+                            "@id": "alb01c09",
+                            "@duracion": "3:17",
+                            "titulo": "Nana"
+                        },
+                        {
+                            "@id": "alb01c10",
+                            "@duracion": "2:55",
+                            "titulo": "Maldición"
+                        },
+                        {
+                            "@id": "alb01c11",
+                            "@duracion": "1:34",
+                            "titulo": "A ningún hombre"
+                        }
+                    ]
+                },
+                {
+                    "@id": "alb02",
+                    "@año": "2004",
+                    "@artista": "art02",
+                    "@cubierta": "cub_02",
+                    "titulo": "Pafuera telarañas",
+                    "compañia": {
+                        "@nombre": "EMI Music"
+                    },
+                    "cancion": [
+                        {
+                            "@id": "alb02c01",
+                            "@duracion": "3:45",
+                            "@valoracion": "5",
+                            "titulo": "Men señará",
+                            "reproducciones": {
+                                "@última": "15-02-2010",
+                                "@numero": "20"
+                            },
+                            "género": "Pop rock"
+                        },
+                        {
+                            "@id": "alb02c02",
+                            "@duracion": "3:36",
+                            "@valoracion": "5",
+                            "titulo": "Ella",
+                            "reproducciones": {
+                                "@última": "15-02-2010",
+                                "@numero": "15"
+                            }
+                        },
+                        {
+                            "@id": "alb02c03",
+                            "@duracion": "2:56",
+                            "@valoracion": "3",
+                            "titulo": "Con mis manos",
+                            "reproducciones": {
+                                "@última": "15-02-2010",
+                                "@numero": "5"
+                            }
+                        },
+                        {
+                            "@id": "alb02c04",
+                            "@duracion": "3:49",
+                            "titulo": "Siempre me quedará"
+                        },
+                        {
+                            "@id": "alb02c05",
+                            "@duracion": "3:36",
+                            "@valoracion": "5",
+                            "titulo": "Malo",
+                            "reproducciones": {
+                                "@última": "15-02-2010",
+                                "@numero": "30"
+                            }
+                        },
+                        {
+                            "@id": "alb02c06",
+                            "@duracion": "3:42",
+                            "titulo": "Ska de la tierra",
+                            "género": "Ska"
+                        },
+                        {
+                            "@id": "alb02c07",
+                            "@duracion": "3:54",
+                            "titulo": "El golpe"
+                        },
+                        {
+                            "@id": "alb02c08",
+                            "@duracion": "3:45",
+                            "titulo": "Revolvió"
+                        },
+                        {
+                            "@id": "alb02c09",
+                            "@duracion": "3:55",
+                            "titulo": "Como los olivos"
+                        },
+                        {
+                            "@id": "alb02c10",
+                            "@duracion": "3:50",
+                            "titulo": "Cuidándote"
+                        },
+                        {
+                            "@id": "alb02c11",
+                            "@duracion": "3:25",
+                            "titulo": "Siete horas"
+                        },
+                        {
+                            "@id": "alb02c12",
+                            "@duracion": "3:49",
+                            "titulo": "Tu silencio"
+                        },
+                        {
+                            "@id": "alb02c13",
+                            "@duracion": "2:52",
+                            "titulo": "Razones"
+                        }
+                    ]
+                },
+                {
+                    "@id": "alb03",
+                    "@año": "2003",
+                    "@artista": "art03",
+                    "@cubierta": "cub_03",
+                    "titulo": "Sí",
+                    "compañia": {
+                        "@nombre": "BMG Ariola"
+                    },
+                    "cancion": [
+                        {
+                            "@id": "alb03c01",
+                            "@duracion": "4:03",
+                            "@valoracion": "5",
+                            "titulo": "Lento",
+                            "reproducciones": {
+                                "@última": "15-02-2007",
+                                "@numero": "15"
+                            },
+                            "género": "Pop rock"
+                        },
+                        {
+                            "@id": "alb03c02",
+                            "@duracion": "3:17",
+                            "@valoracion": "5",
+                            "titulo": "Andar conmigo",
+                            "reproducciones": {
+                                "@última": "15-02-2007",
+                                "@numero": "15"
+                            },
+                            "género": "Pop latino"
+                        },
+                        {
+                            "@id": "alb03c03",
+                            "@duracion": "4:04",
+                            "@valoracion": "4",
+                            "titulo": "Algo está cambiando",
+                            "reproducciones": {
+                                "@última": "15-02-2007",
+                                "@numero": "5"
+                            }
+                        },
+                        {
+                            "@id": "alb03c04",
+                            "@duracion": "3:20",
+                            "titulo": "A tu lado"
+                        },
+                        {
+                            "@id": "alb03c05",
+                            "@duracion": "3:20",
+                            "@valoracion": "5",
+                            "titulo": "Lo que pidas",
+                            "reproducciones": {
+                                "@última": "15-02-2007",
+                                "@numero": "20"
+                            }
+                        },
+                        {
+                            "@id": "alb03c10",
+                            "@duracion": "3:13",
+                            "@valoracion": "5",
+                            "titulo": "Oleada",
+                            "reproducciones": {
+                                "@última": "15-02-2007",
+                                "@numero": "30"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "artistas": {
+            "artista": [
+                {
+                    "@id": "art01",
+                    "nombre": "Rosalía"
+                },
+                {
+                    "@id": "art02",
+                    "nombre": "Bebe"
+                },
+                {
+                    "@id": "art03",
+                    "nombre": "Julieta Venegas"
+                }
+            ]
+        }
+    }
+}

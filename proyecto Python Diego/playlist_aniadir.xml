@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="playlists.xsl"?>
+<playlists>
+  <playlist id="pl01" nombre="Mujeres favoritas" modo="ordenado">
+    <cancion id="alb01c01" orden="1"/>
+    <cancion id="alb02c01" orden="2"/>
+    <cancion id="alb03c01" orden="3"/>
+  </playlist>
+  <playlist id="pl02" nombre="Mujeres random" modo="aleatorio">
+    <cancion id="alb01c01"/>
+    <cancion id="alb01c02"/>
+    <cancion id="alb01c03"/>
+    <cancion id="alb02c01"/>
+    <cancion id="alb02c02"/>
+    <cancion id="alb03c01"/>
+    <cancion id="alb03c02"/>
+  <cancion id="alb03c05"/></playlist>
+  <playlist id="pl03" nombre="Mujeres álbumes" modo="álbum">
+    <album id="alb01"/>
+    <album id="alb02"/>
+    <album id="alb03"/>
+  </playlist>
+</playlists>
